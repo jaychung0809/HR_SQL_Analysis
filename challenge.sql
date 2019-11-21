@@ -44,6 +44,7 @@ SELECT
 	rnd.title,
 	rnd.from_date,
 	de.to_date
+INTO mentors 
 FROM ret_no_dup AS rnd
 LEFT JOIN dept_emp AS de
 ON (rnd.emp_no = de.emp_no)
